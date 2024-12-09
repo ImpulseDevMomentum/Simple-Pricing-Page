@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0D0D0D;
+            color: white;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #CCCCCC;
+        }
+
+        .pricing-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: rgba(20, 20, 20, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            width: 350px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+            position: relative;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: scale(1.08);
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .benefits {
+            list-style: none;
+            text-align: left;
+            font-size: 1.05rem;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .benefits li {
+            margin-bottom: 12px;
+        }
+
+        .benefits li::before {
+            content: "\f005";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-right: 10px;
+            color: #00CC66;
+        }
+
+        .benefits li.unavailable::before {
+            content: "\f057";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: #CC3333;
+        }
+
+        .card button {
+            background-color: #1E1E1E;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 14px 30px;
+            font-size: 1.1rem;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            width: 100%;
+        }
+
+        .card button:hover {
+            background-color: #333;
+            border-color: #555;
+        }
+
+        .custom .best {
+            background: linear-gradient(90deg, #32a4c0, #54c6ce);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.3rem;
+            font-weight: bold;
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            padding: 8px 12px;
+            border-radius: 15px;
+            text-transform: uppercase;
+        }
+
+        .custom button {
+            background-color: #4cbcca;
+            border: none;
+            color: white;
+        }
+
+        .custom button:hover {
+            background-color: #4cbcca;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1rem;
+            color: #CCCCCC;
+        }
+
+        .footer a {
+            color: #4cbcca;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            background-color: #1E1E1E;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pricing-header">
+        </div>
+
+        <div class="card custom">
+            <div class="best">Best Choice</div>
+            <h2><i class="fas fa-gem"></i> Diamond Custom Instance</h2>
+            <div class="price">$6.00/month</div>
+            <ul class="benefits">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+            </ul>
+            <a href="https://discord.com/invite/"><button>Contact Us</button></a>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+    </div>
+</body>
+</html>
